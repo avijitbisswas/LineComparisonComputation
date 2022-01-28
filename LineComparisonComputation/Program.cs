@@ -17,7 +17,10 @@ namespace LineComparisonComputation
             linelength.ComputeLines();
             Console.ReadLine(); 
            
-
+            CheckEquality checkEquality = new CheckEquality();
+            checkEquality.Equality();
+            Console.ReadLine();
+            
         }
     }
 }

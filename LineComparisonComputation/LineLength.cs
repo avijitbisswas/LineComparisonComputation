@@ -15,7 +15,7 @@ namespace LineComparisonComputation
             int x1 = Convert.ToInt32(Console.ReadLine());
             int y1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the (x2,y2) co-ordinates: ");
+            Console.WriteLine("Enter (x2,y2) co-ordinates: ");
             int x2 = Convert.ToInt32(Console.ReadLine());
             int y2 = Convert.ToInt32(Console.ReadLine());
 
