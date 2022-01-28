@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LineComparisonComputation
 {
-    public class CheckEquality
+    public class LineComparision
     {
-        public void Equality()
+        public void EndComparision()
         {
             Console.WriteLine("(x1,y1) & (x2,y2) are 1st line coordinates");
             Console.WriteLine("(x3,y3) & (x4,y4) are the 2nd line cordinates");
@@ -32,19 +32,19 @@ namespace LineComparisonComputation
             double Line1 = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             double Line2 = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
-            if (Line1 == Line2)
+            if (Line1.Equals (Line2))
             {
                 Console.WriteLine("Line1 and Line2 are equal");
             }
-            else
+            if (Line1.CompareTo (Line2) > 0)
             {
-                Console.WriteLine("Line1 and Line2 are not equal");
+                Console.WriteLine("Line1 is greater than Line2 ");
             }
-
+            if (Line2.CompareTo (Line1) > 0)
+            {
+                Console.WriteLine("line2 is greater than line1 ");
+            }
+           
         }
     }
 }
-
-
-
-
